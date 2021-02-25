@@ -37,7 +37,7 @@ export function Countdown() {
 
   function resetCountdown() {
     setIsActive(false);
-    clearInterval(countdownTimeout);
+    clearTimeout(countdownTimeout);
     setTime(cycleMinutes * 60);
   }
 
